@@ -32,6 +32,11 @@ if ((mouse_check_button(mb_left)) || gamepad_button_check(0,gp_shoulderrb)) && (
 		direction = other.image_angle + random_range(-3,3);
 		image_angle = direction;
 	}
+	with (oPlayer)
+	{
+		gunkickx = lengthdir_x(3, other.image_angle-180);
+		gunkicky = lengthdir_y(1, other.image_angle-180);
+	}
 }
 
 x = x - lengthdir_x(recoil, image_angle);

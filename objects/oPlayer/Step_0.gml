@@ -35,9 +35,11 @@ if (gamepad_button_check_pressed(0,gp_face1))
 //Calculate Movement
 var move = key_right - key_left;
 
-hsp = move * walksp;
+hsp = (move * walksp) + gunkickx;
+gunkickx = 0;
 
-vsp = vsp + grv;
+vsp = (vsp + grv) + gunkicky;
+gunkicky = 0;
 
 canjump -= 1;
 if(canjump > 0) && (key_jump)
@@ -69,6 +71,9 @@ if (place_meeting(x,y+vsp,oWall))
 y = y + vsp;
 
 //Animation
+var aimside = sign(mouse_x - x);
+if (aimside != 0) image_xscale = aimside;
+
 if (!place_meeting(x,y+1,oWall))
 {
 	sprite_index = sPlayerA;
@@ -99,7 +104,6 @@ else
 	else
 	{
 		sprite_index = sPlayerR;
+		if (aimside != sign(hsp)) sprite_index = sPlayerRb;
 	}
 }
-
-if (hsp != 0) image_xscale = sign(hsp); 

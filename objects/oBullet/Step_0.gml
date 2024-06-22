@@ -13,8 +13,8 @@ if (place_meeting(x,y,pShootable))
 	instance_destroy();	
 }
 
-
-if (place_meeting(x,y,oWall) && (image_index != 0))
+if (place_meeting(x,y,oBullet)){}
+else if (place_meeting(x,y,oWall) && (image_index != 0))
 {
 	while(place_meeting(x,y,oWall))
 	{

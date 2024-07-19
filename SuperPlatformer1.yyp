@@ -30,7 +30,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"SuperPlatformer1",
   "resources":[
@@ -78,6 +78,7 @@
     {"id":{"name":"snFoot4","path":"sounds/snFoot4/snFoot4.yy",},},
     {"id":{"name":"snLanding","path":"sounds/snLanding/snLanding.yy",},},
     {"id":{"name":"snShot","path":"sounds/snShot/snShot.yy",},},
+    {"id":{"name":"Amogus","path":"sprites/Amogus/Amogus.yy",},},
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},},
     {"id":{"name":"sDirt","path":"sprites/sDirt/sDirt.yy",},},
     {"id":{"name":"sDust","path":"sprites/sDust/sDust.yy",},},

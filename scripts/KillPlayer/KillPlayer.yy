@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"KillPlayer",
   "isCompatibility":false,
   "isDnD":false,
